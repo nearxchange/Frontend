@@ -1,0 +1,1 @@
+/Users/haitran/Hackathon_NEAR/NearXchange/walletmall/wallet-mall-project/contract/target/wasm32-unknown-unknown/debug/greeter.wasm: /Users/haitran/Hackathon_NEAR/NearXchange/walletmall/wallet-mall-project/contract/src/lib.rs
