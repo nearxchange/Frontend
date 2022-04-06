@@ -38012,8 +38012,8 @@ async function signTransaction(...args) {
 exports.signTransaction = signTransaction;
 
 },{"buffer":"fCgem","js-sha256":"ahVaM","./utils/enums":"kjmPo","borsh":"4JCmN","./utils/key_pair":"kBQFP"}],"ahVaM":[function(require,module,exports) {
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 /**
  * [js-sha256]{@link https://github.com/emn178/js-sha256}
  *
@@ -41051,8 +41051,8 @@ $RefreshReg$(_c, "MainNavigation");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./MainNavigation.module.css":"dSOLw","../../utils":"en4he","./HeaderCartButton":"74BUM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dSOLw":[function(require,module,exports) {
 module.exports["header"] = `header_MTn1Aq`;
-module.exports["active"] = `active_MTn1Aq`;
 module.exports["button"] = `button_MTn1Aq`;
+module.exports["active"] = `active_MTn1Aq`;
 module.exports["logo"] = `logo_MTn1Aq`;
 module.exports["nav"] = `nav_MTn1Aq`;
 
@@ -41323,10 +41323,10 @@ exports.default = CartContext;
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fXrbG":[function(require,module,exports) {
-module.exports["button"] = `button_r_HJxq`;
-module.exports["icon"] = `icon_r_HJxq`;
-module.exports["badge"] = `badge_r_HJxq`;
 module.exports["bump"] = `bump_r_HJxq`;
+module.exports["badge"] = `badge_r_HJxq`;
+module.exports["icon"] = `icon_r_HJxq`;
+module.exports["button"] = `button_r_HJxq`;
 
 },{}],"bvz6I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3b16 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -41453,11 +41453,11 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cart.module.css":"bglqO","../UI/Modal":"1r68C","../../store/cart-context":"6PK1l","./CartItem/CartItem":"8HsNv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bglqO":[function(require,module,exports) {
-module.exports["total"] = `total_8fnk-G`;
-module.exports["actions"] = `actions_8fnk-G`;
 module.exports["cart-items"] = `cart-items_8fnk-G`;
-module.exports["button--alt"] = `button--alt_8fnk-G`;
 module.exports["button"] = `button_8fnk-G`;
+module.exports["actions"] = `actions_8fnk-G`;
+module.exports["total"] = `total_8fnk-G`;
+module.exports["button--alt"] = `button--alt_8fnk-G`;
 
 },{}],"1r68C":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9b14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -41542,9 +41542,9 @@ $RefreshReg$(_c2, "Modal");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./Modal.module.css":"2Ck3r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Ck3r":[function(require,module,exports) {
-module.exports["modal"] = `modal_vKNN5G`;
-module.exports["backdrop"] = `backdrop_vKNN5G`;
 module.exports["slide-down"] = `slide-down_vKNN5G`;
+module.exports["backdrop"] = `backdrop_vKNN5G`;
+module.exports["modal"] = `modal_vKNN5G`;
 
 },{}],"8HsNv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -41652,9 +41652,9 @@ $RefreshReg$(_c, "CartItem");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./CartItem.module.css":"8yv1W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yv1W":[function(require,module,exports) {
 module.exports["price"] = `price_6Wak0q`;
-module.exports["actions"] = `actions_6Wak0q`;
 module.exports["summary"] = `summary_6Wak0q`;
 module.exports["cart-item"] = `cart-item_6Wak0q`;
+module.exports["actions"] = `actions_6Wak0q`;
 module.exports["amount"] = `amount_6Wak0q`;
 
 },{}],"ikpZF":[function(require,module,exports) {
@@ -41907,9 +41907,9 @@ $RefreshReg$(_c, "QuoteItem");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./QuoteItem.module.css":"jaoAX","../Cart/CartItem/Icon/AddToCartIcon":"8Ek5D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jaoAX":[function(require,module,exports) {
-module.exports["item"] = `item_8GgElG`;
 module.exports["btn"] = `btn_8GgElG`;
 module.exports["btn--flat"] = `btn--flat_8GgElG`;
+module.exports["item"] = `item_8GgElG`;
 
 },{}],"8Ek5D":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0de0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -42301,10 +42301,10 @@ $RefreshReg$(_c, "LoadingSpinner");
 module.exports["spinner"] = `spinner_PyEmxq`;
 
 },{}],"cUXOE":[function(require,module,exports) {
-module.exports["loading"] = `loading_xY6wvq`;
-module.exports["actions"] = `actions_xY6wvq`;
 module.exports["control"] = `control_xY6wvq`;
+module.exports["loading"] = `loading_xY6wvq`;
 module.exports["form"] = `form_xY6wvq`;
+module.exports["actions"] = `actions_xY6wvq`;
 
 },{}],"8oyj4":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4551 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -42346,9 +42346,9 @@ $RefreshReg$(_c, "NotFound");
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jJRor":[function(require,module,exports) {
 module.exports["centered"] = `centered_jyLUZa`;
+module.exports["focused"] = `focused_jyLUZa`;
 module.exports["btn"] = `btn_jyLUZa`;
 module.exports["btn--flat"] = `btn--flat_jyLUZa`;
-module.exports["focused"] = `focused_jyLUZa`;
 
 },{}]},["kn9T2","7nZVA","8lqZg","fXrbG","2Ck3r","jGjeY"], "8lqZg", "parcelRequire2887")
 
