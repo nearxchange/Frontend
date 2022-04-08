@@ -7,6 +7,7 @@ import WalletMarketPlace from './pages/WalletMarketPlace'
 import WalletListing from './pages/WalletListing'
 import NotFound from './pages/NotFound'
 import getConfig from './config'
+import './css/styles.css'
 
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
 
@@ -61,6 +62,7 @@ export default function App() {
             </Route>
           </Switch>
         </Layout>
+        <h1 className='bg-gray-500'>HEEEEEEF</h1>
       </main>
     )
   }
