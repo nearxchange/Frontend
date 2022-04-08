@@ -3,7 +3,6 @@ import { Prompt } from 'react-router-dom';
 import { Fragment } from 'react';
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
-import classes from './WalletListingForm.module.css';
 
 const WalletListingForm = (props) => {
 
@@ -35,23 +34,23 @@ const WalletListingForm = (props) => {
     <Fragment>
       <Prompt when={isEntering} message={(location) => 'Are you sure you want to leave?'} />
       <Card>
-        <form onFocus={formFocusedHandler} className={classes.form} onSubmit={submitFormHandler}>
+        <form onFocus={formFocusedHandler} onSubmit={submitFormHandler}>
           {props.isLoading && (
-            <div className={classes.loading}>
+            <div>
               <LoadingSpinner />
             </div>
           )}
 
-          <div className={classes.control}>
+          <div>
             <label htmlFor='author'>Author</label>
             <input type='text' id='author' ref={authorInputRef} />
           </div>
-          <div className={classes.control}>
+          <div>
             <label htmlFor='text'>Text</label>
             <textarea id='text' rows='1' ref={textInputRef}></textarea>
           </div>
-          <div className={classes.actions}>
-            <button onClick={finishEnteringHandler} className='btn'>List Now</button>
+          <div>
+            <button onClick={finishEnteringHandler}>List Now</button>
           </div>
         </form>
       </Card>
