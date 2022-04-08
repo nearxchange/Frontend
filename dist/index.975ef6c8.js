@@ -1023,7 +1023,7 @@ window.nearInitPromise = _utils.initContract().then(()=>{
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","react-router-dom":"cHIiW","./App":"2kQhy","./global.css":"jJRor","./utils":"en4he","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","react-router-dom":"cHIiW","./App":"2kQhy","./global.css":"11axS","./utils":"en4he","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-dev-runtime.development.js');
 
@@ -25997,6 +25997,7 @@ var _notFound = require("./pages/NotFound");
 var _notFoundDefault = parcelHelpers.interopDefault(_notFound);
 var _config = require("./config");
 var _configDefault = parcelHelpers.interopDefault(_config);
+var _stylesCss = require("./css/styles.css");
 var _s = $RefreshSig$();
 const { networkId  } = _configDefault.default("development");
 function App() {
@@ -26023,75 +26024,85 @@ function App() {
     []);
     // if not signed in, return early with sign-in prompt
     if (!window.walletConnection.isSignedIn()) return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_layoutDefault.default, {
-            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Switch, {
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                        path: "/",
-                        exact: true,
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Redirect, {
-                            to: "/walletMarketPlace"
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_layoutDefault.default, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Switch, {
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                            path: "/",
+                            exact: true,
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Redirect, {
+                                to: "/walletMarketPlace"
+                            }, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 52,
+                                columnNumber: 15
+                            }, this)
                         }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 51,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 50,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                        path: "/walletMarketPlace",
-                        exact: true,
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_walletMarketPlaceDefault.default, {}, void 0, false, {
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                            path: "/walletMarketPlace",
+                            exact: true,
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_walletMarketPlaceDefault.default, {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 55,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 54,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 53,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                        path: "/new-quote",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_walletListingDefault.default, {}, void 0, false, {
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                            path: "/new-quote",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_walletListingDefault.default, {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 58,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 57,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 56,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
-                        path: "*",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_notFoundDefault.default, {}, void 0, false, {
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
+                            path: "*",
+                            children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_notFoundDefault.default, {}, void 0, false, {
+                                fileName: "src/App.js",
+                                lineNumber: 61,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
                             fileName: "src/App.js",
                             lineNumber: 60,
-                            columnNumber: 15
+                            columnNumber: 13
                         }, this)
-                    }, void 0, false, {
-                        fileName: "src/App.js",
-                        lineNumber: 59,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/App.js",
+                    lineNumber: 50,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 49,
-                columnNumber: 11
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                className: "bg-gray-500",
+                children: "HEEEEEEF"
+            }, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 65,
+                columnNumber: 9
             }, this)
-        }, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 48,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
+        ]
+    }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 47,
+        lineNumber: 48,
         columnNumber: 7
     }, this);
     return(// use React Fragment, <>, to avoid wrapping elements in unnecessary divs
@@ -26106,7 +26117,7 @@ function App() {
                 children: "Sign out"
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 71,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("main", {
@@ -26122,7 +26133,7 @@ function App() {
                                 children: greeting1
                             }, void 0, false, {
                                 fileName: "src/App.js",
-                                lineNumber: 76,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             ' ' /* React trims whitespace around tags; insert literal space character when needed */ ,
@@ -26131,7 +26142,7 @@ function App() {
                         ]
                     }, void 0, true, {
                         fileName: "src/App.js",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
@@ -26179,7 +26190,7 @@ function App() {
                                     children: "Change greeting"
                                 }, void 0, false, {
                                     fileName: "src/App.js",
-                                    lineNumber: 131,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -26198,7 +26209,7 @@ function App() {
                                             }
                                         }, void 0, false, {
                                             fileName: "src/App.js",
-                                            lineNumber: 142,
+                                            lineNumber: 144,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -26209,31 +26220,31 @@ function App() {
                                             children: "Save"
                                         }, void 0, false, {
                                             fileName: "src/App.js",
-                                            lineNumber: 149,
+                                            lineNumber: 151,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/App.js",
-                                    lineNumber: 141,
+                                    lineNumber: 143,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "src/App.js",
-                            lineNumber: 130,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 88,
+                        lineNumber: 90,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
                         children: "Look at that! A Hello World app! This greeting is stored on the NEAR blockchain. Check it out:"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 158,
+                        lineNumber: 160,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("ol", {
@@ -26245,7 +26256,7 @@ function App() {
                                         children: "src/App.js"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 21
                                     }, this),
                                     " and ",
@@ -26253,7 +26264,7 @@ function App() {
                                         children: "src/utils.js"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 49
                                     }, this),
                                     " \u2013 you'll see ",
@@ -26261,7 +26272,7 @@ function App() {
                                         children: "get_greeting"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 88
                                     }, this),
                                     " and ",
@@ -26269,7 +26280,7 @@ function App() {
                                         children: "set_greeting"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 118
                                     }, this),
                                     " being called on ",
@@ -26277,14 +26288,14 @@ function App() {
                                         children: "contract"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 163,
+                                        lineNumber: 166,
                                         columnNumber: 160
                                     }, this),
                                     ". What's this?"
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.js",
-                                lineNumber: 162,
+                                lineNumber: 165,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
@@ -26294,7 +26305,7 @@ function App() {
                                         children: "contract"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 166,
+                                        lineNumber: 169,
                                         columnNumber: 30
                                     }, this),
                                     " code is defined in ",
@@ -26302,7 +26313,7 @@ function App() {
                                         children: "assembly/main.ts"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 166,
+                                        lineNumber: 169,
                                         columnNumber: 71
                                     }, this),
                                     " \u2013 this is the source code for your ",
@@ -26313,14 +26324,14 @@ function App() {
                                         children: "smart contract"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 166,
+                                        lineNumber: 169,
                                         columnNumber: 136
                                     }, this),
                                     "."
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.js",
-                                lineNumber: 165,
+                                lineNumber: 168,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("li", {
@@ -26330,7 +26341,7 @@ function App() {
                                         children: "yarn dev"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 26
                                     }, this),
                                     ", the code in ",
@@ -26338,7 +26349,7 @@ function App() {
                                         children: "assembly/main.ts"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 61
                                     }, this),
                                     " gets deployed to the NEAR testnet. You can see how this happens by looking in ",
@@ -26346,7 +26357,7 @@ function App() {
                                         children: "package.json"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 169
                                     }, this),
                                     " at the ",
@@ -26354,7 +26365,7 @@ function App() {
                                         children: "scripts"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 202
                                     }, this),
                                     " section to find the ",
@@ -26362,25 +26373,25 @@ function App() {
                                         children: "dev"
                                     }, void 0, false, {
                                         fileName: "src/App.js",
-                                        lineNumber: 168,
+                                        lineNumber: 171,
                                         columnNumber: 243
                                     }, this),
                                     " command."
                                 ]
                             }, void 0, true, {
                                 fileName: "src/App.js",
-                                lineNumber: 167,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.js",
-                        lineNumber: 161,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 170,
+                        lineNumber: 173,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
@@ -26393,7 +26404,7 @@ function App() {
                                 children: "the NEAR docs"
                             }, void 0, false, {
                                 fileName: "src/App.js",
-                                lineNumber: 172,
+                                lineNumber: 175,
                                 columnNumber: 39
                             }, this),
                             " or look through some ",
@@ -26404,25 +26415,25 @@ function App() {
                                 children: "example apps"
                             }, void 0, false, {
                                 fileName: "src/App.js",
-                                lineNumber: 172,
+                                lineNumber: 175,
                                 columnNumber: 143
                             }, this),
                             "."
                         ]
                     }, void 0, true, {
                         fileName: "src/App.js",
-                        lineNumber: 171,
+                        lineNumber: 174,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 7
             }, this),
             showNotification && /*#__PURE__*/ _jsxDevRuntime.jsxDEV(Notification, {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 175,
+                lineNumber: 178,
                 columnNumber: 28
             }, this)
         ]
@@ -26443,7 +26454,7 @@ function Notification() {
                 children: window.accountId
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 185,
+                lineNumber: 188,
                 columnNumber: 7
             }, this),
             ' ' /* React trims whitespace around tags; insert literal space character when needed */ ,
@@ -26456,7 +26467,7 @@ function Notification() {
                 children: window.contract.contractId
             }, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 191,
+                lineNumber: 194,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("footer", {
@@ -26465,26 +26476,26 @@ function Notification() {
                         children: "\u2714 Succeeded"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 195,
+                        lineNumber: 198,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
                         children: "Just now"
                     }, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 196,
+                        lineNumber: 199,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/App.js",
-                lineNumber: 194,
+                lineNumber: 197,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 184,
+        lineNumber: 187,
         columnNumber: 5
     }, this);
 }
@@ -26498,7 +26509,7 @@ $RefreshReg$(_c1, "Notification");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","regenerator-runtime/runtime":"dXNgZ","react":"21dqq","react-router-dom":"cHIiW","./utils":"en4he","./components/layout/Layout":"j2H6t","./pages/WalletMarketPlace":"ikpZF","./pages/WalletListing":"3XwRJ","./pages/NotFound":"8oyj4","./config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXNgZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","regenerator-runtime/runtime":"dXNgZ","react":"21dqq","react-router-dom":"cHIiW","./utils":"en4he","./components/layout/Layout":"j2H6t","./pages/WalletMarketPlace":"ikpZF","./pages/WalletListing":"3XwRJ","./pages/NotFound":"8oyj4","./config":"jtCLN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./css/styles.css":"1CY4s"}],"dXNgZ":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -38012,8 +38023,8 @@ async function signTransaction(...args) {
 exports.signTransaction = signTransaction;
 
 },{"buffer":"fCgem","js-sha256":"ahVaM","./utils/enums":"kjmPo","borsh":"4JCmN","./utils/key_pair":"kBQFP"}],"ahVaM":[function(require,module,exports) {
-var process = require("process");
 var global = arguments[3];
+var process = require("process");
 /**
  * [js-sha256]{@link https://github.com/emn178/js-sha256}
  *
@@ -40932,10 +40943,7 @@ $RefreshReg$(_c, "Layout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Layout.module.css":"fjbgj","./MainNavigation":"fO3R4","../Cart/Cart":"bvz6I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fjbgj":[function(require,module,exports) {
-module.exports["main"] = `main_5l06ia`;
-
-},{}],"fO3R4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Layout.module.css":"b2QDa","./MainNavigation":"fO3R4","../Cart/Cart":"bvz6I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b2QDa":[function() {},{}],"fO3R4":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4baa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41049,14 +41057,7 @@ $RefreshReg$(_c, "MainNavigation");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./MainNavigation.module.css":"dSOLw","../../utils":"en4he","./HeaderCartButton":"74BUM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dSOLw":[function(require,module,exports) {
-module.exports["header"] = `header_MTn1Aq`;
-module.exports["button"] = `button_MTn1Aq`;
-module.exports["active"] = `active_MTn1Aq`;
-module.exports["logo"] = `logo_MTn1Aq`;
-module.exports["nav"] = `nav_MTn1Aq`;
-
-},{}],"74BUM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./MainNavigation.module.css":"38I6E","../../utils":"en4he","./HeaderCartButton":"74BUM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"38I6E":[function() {},{}],"74BUM":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$152a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41138,7 +41139,7 @@ $RefreshReg$(_c, "HeaderCartButton");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Cart/CartItem/Icon/CartIcon":"jPwKa","../../store/cart-context":"6PK1l","./HeaderCartButton.module.css":"fXrbG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jPwKa":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../Cart/CartItem/Icon/CartIcon":"jPwKa","../../store/cart-context":"6PK1l","./HeaderCartButton.module.css":"cIq7b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jPwKa":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3ab6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41322,13 +41323,7 @@ exports.default = CartContext;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fXrbG":[function(require,module,exports) {
-module.exports["bump"] = `bump_r_HJxq`;
-module.exports["badge"] = `badge_r_HJxq`;
-module.exports["icon"] = `icon_r_HJxq`;
-module.exports["button"] = `button_r_HJxq`;
-
-},{}],"bvz6I":[function(require,module,exports) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cIq7b":[function() {},{}],"bvz6I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3b16 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41452,14 +41447,7 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cart.module.css":"bglqO","../UI/Modal":"1r68C","../../store/cart-context":"6PK1l","./CartItem/CartItem":"8HsNv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bglqO":[function(require,module,exports) {
-module.exports["cart-items"] = `cart-items_8fnk-G`;
-module.exports["button"] = `button_8fnk-G`;
-module.exports["actions"] = `actions_8fnk-G`;
-module.exports["total"] = `total_8fnk-G`;
-module.exports["button--alt"] = `button--alt_8fnk-G`;
-
-},{}],"1r68C":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Cart.module.css":"2kO49","../UI/Modal":"1r68C","../../store/cart-context":"6PK1l","./CartItem/CartItem":"8HsNv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2kO49":[function() {},{}],"1r68C":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9b14 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41541,12 +41529,7 @@ $RefreshReg$(_c2, "Modal");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./Modal.module.css":"2Ck3r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Ck3r":[function(require,module,exports) {
-module.exports["slide-down"] = `slide-down_vKNN5G`;
-module.exports["backdrop"] = `backdrop_vKNN5G`;
-module.exports["modal"] = `modal_vKNN5G`;
-
-},{}],"8HsNv":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./Modal.module.css":"5WH33","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5WH33":[function() {},{}],"8HsNv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bb6f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41650,14 +41633,7 @@ $RefreshReg$(_c, "CartItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./CartItem.module.css":"8yv1W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yv1W":[function(require,module,exports) {
-module.exports["price"] = `price_6Wak0q`;
-module.exports["summary"] = `summary_6Wak0q`;
-module.exports["cart-item"] = `cart-item_6Wak0q`;
-module.exports["actions"] = `actions_6Wak0q`;
-module.exports["amount"] = `amount_6Wak0q`;
-
-},{}],"ikpZF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./CartItem.module.css":"fRDnV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fRDnV":[function() {},{}],"ikpZF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$48b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41829,7 +41805,7 @@ $RefreshReg$(_c, "QuoteList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./QuoteItem":"eRtWq","./QuoteList.module.css":"1BNTl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRtWq":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./QuoteItem":"eRtWq","./QuoteList.module.css":"5b8VO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eRtWq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d06d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41906,12 +41882,7 @@ $RefreshReg$(_c, "QuoteItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./QuoteItem.module.css":"jaoAX","../Cart/CartItem/Icon/AddToCartIcon":"8Ek5D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jaoAX":[function(require,module,exports) {
-module.exports["btn"] = `btn_8GgElG`;
-module.exports["btn--flat"] = `btn--flat_8GgElG`;
-module.exports["item"] = `item_8GgElG`;
-
-},{}],"8Ek5D":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./QuoteItem.module.css":"cYB7R","../Cart/CartItem/Icon/AddToCartIcon":"8Ek5D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cYB7R":[function() {},{}],"8Ek5D":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0de0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41952,11 +41923,7 @@ $RefreshReg$(_c, "AddToCartIcon");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1BNTl":[function(require,module,exports) {
-module.exports["list"] = `list_yEz23a`;
-module.exports["sorting"] = `sorting_yEz23a`;
-
-},{}],"8WSHO":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5b8VO":[function() {},{}],"8WSHO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3126 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42014,10 +41981,7 @@ $RefreshReg$(_c, "SearchBox");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchBox.module.css":"ki13o","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ki13o":[function(require,module,exports) {
-module.exports["search_container"] = `search_container_SM7Y_a`;
-
-},{}],"3XwRJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchBox.module.css":"2IgQf","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2IgQf":[function() {},{}],"3XwRJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$59d2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42229,7 +42193,7 @@ $RefreshReg$(_c, "WalletListingForm");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","../UI/Card":"hszyZ","../UI/LoadingSpinner":"iu1S6","./WalletListingForm.module.css":"cUXOE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hszyZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","../UI/Card":"hszyZ","../UI/LoadingSpinner":"iu1S6","./WalletListingForm.module.css":"lwv3i","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hszyZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a25b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42263,10 +42227,7 @@ $RefreshReg$(_c, "Card");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Card.module.css":"eb9v4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eb9v4":[function(require,module,exports) {
-module.exports["card"] = `card_XuBKrG`;
-
-},{}],"iu1S6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Card.module.css":"bOqTr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bOqTr":[function() {},{}],"iu1S6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8967 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42297,16 +42258,7 @@ $RefreshReg$(_c, "LoadingSpinner");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./LoadingSpinner.module.css":"jGjeY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jGjeY":[function(require,module,exports) {
-module.exports["spinner"] = `spinner_PyEmxq`;
-
-},{}],"cUXOE":[function(require,module,exports) {
-module.exports["control"] = `control_xY6wvq`;
-module.exports["loading"] = `loading_xY6wvq`;
-module.exports["form"] = `form_xY6wvq`;
-module.exports["actions"] = `actions_xY6wvq`;
-
-},{}],"8oyj4":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./LoadingSpinner.module.css":"1ccoK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1ccoK":[function() {},{}],"lwv3i":[function() {},{}],"8oyj4":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4551 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42344,12 +42296,6 @@ $RefreshReg$(_c, "NotFound");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jJRor":[function(require,module,exports) {
-module.exports["centered"] = `centered_jyLUZa`;
-module.exports["focused"] = `focused_jyLUZa`;
-module.exports["btn"] = `btn_jyLUZa`;
-module.exports["btn--flat"] = `btn--flat_jyLUZa`;
-
-},{}]},["kn9T2","7nZVA","8lqZg","fXrbG","2Ck3r","jGjeY"], "8lqZg", "parcelRequire2887")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1CY4s":[function() {},{}],"11axS":[function() {},{}]},["kn9T2","7nZVA","8lqZg"], "8lqZg", "parcelRequire2887")
 
 //# sourceMappingURL=index.975ef6c8.js.map

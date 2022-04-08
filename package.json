@@ -49,7 +49,7 @@
     "tailwindcss": "^2.2.19"
   },
   "@parcel/transformer-css": {
-    "cssModules": true
+    "cssModules": false
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
