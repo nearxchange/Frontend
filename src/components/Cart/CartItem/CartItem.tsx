@@ -20,7 +20,7 @@ const CartItem: React.FC<Props> = ({name, amount, checked}) => {
         </div>
         <h2 class='flex-1'>{name}</h2>
         <div class='flex flex-row items-center'>
-          <img className='w-[16px] h-[16px] mr-1' src={require('../../../assets/icons/near-logo.png')}   />
+          <img className='w-[16px] h-[16px] mr-1' src={require('assets/icons/near-logo.png')}   />
           <span>{amount}</span>
         </div>
       </div>
