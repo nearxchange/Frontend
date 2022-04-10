@@ -7,7 +7,7 @@ import WalletMarketPlace from './pages/WalletMarketPlace'
 import WalletListing from './pages/WalletListing'
 import NotFound from './pages/NotFound'
 import getConfig from './config'
-import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
 
@@ -57,8 +57,8 @@ export default function App() {
             <Route path='/new-quote'>
               <WalletListing />
             </Route>
-            <Route path='/your-cart'>
-              <Cart />
+            <Route path='/checkout'>
+              <Checkout />
             </Route>
             <Route path='*'>
               <NotFound />

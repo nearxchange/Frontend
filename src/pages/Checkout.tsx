@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from '../components/Cart/CartItem/CartItem';
 
-const Cart = () => {
+const Checkout = () => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-10'>
@@ -40,4 +40,4 @@ const Cart = () => {
     )
 }
 
-export default Cart;
+export default Checkout;
