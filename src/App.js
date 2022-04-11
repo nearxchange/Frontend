@@ -62,7 +62,6 @@ export default function App() {
             </Route>
           </Switch>
         </Layout>
-        <h1 className='bg-gray-500'>HEEEEEEF</h1>
       </main>
     )
   }

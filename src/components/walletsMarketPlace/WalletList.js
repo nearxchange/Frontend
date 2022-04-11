@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import QuoteItem from './QuoteItem';
+import WalletItem from './WalletItem';
 
 const sortQuotes = (quotes, ascending) => {
   return quotes.sort((quoteA, quoteB) => {
@@ -12,7 +12,7 @@ const sortQuotes = (quotes, ascending) => {
   });
 };
 
-const QuoteList = (props) => {
+const WalletList = (props) => {
   const history = useHistory();
   const location = useLocation();
 
@@ -34,18 +34,22 @@ const QuoteList = (props) => {
       <div>
         <button onClick={changeSortingHandler}>Sort {isSortingAscending ? 'Descending' : 'Ascending'}</button>
       </div>
-      <ul className='flex flex-wrap justify-start'>
+      <ul className='grid grid-cols-2 mx-16 gap-y-8 px-28'>
         {sortedQuotes.map((quote) => (
-          <QuoteItem
-            key={quote.id}
-            id={quote.id}
-            author={quote.author}
-            text={quote.text}
-          />
+          <div>
+            <WalletItem
+              key={quote.id}
+              id={quote.id}
+              author={quote.author}
+              price={quote.price}
+              text={quote.text}
+            />
+            <hr className='w-10/12 mx-auto' />
+          </div>
         ))}
       </ul>
     </Fragment>
   );
 };
 
-export default QuoteList;
+export default WalletList;
