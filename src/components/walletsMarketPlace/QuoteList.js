@@ -34,7 +34,7 @@ const QuoteList = (props) => {
       <div>
         <button onClick={changeSortingHandler}>Sort {isSortingAscending ? 'Descending' : 'Ascending'}</button>
       </div>
-      <ul>
+      <ul className='flex flex-wrap justify-start'>
         {sortedQuotes.map((quote) => (
           <QuoteItem
             key={quote.id}
