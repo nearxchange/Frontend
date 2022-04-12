@@ -19,7 +19,7 @@ const WalletMarketPlace = () => {
 		<Fragment>
 			<SearchBox />
 			<MatchingWallet />
-			<hr className='w-10/12 mx-auto my-12 border-gray-400' />
+			<hr className='w-10/12 mx-auto mt-10 mb-5 border-gray-400' />
 			<WalletList quotes={DUMMY_QUOTES} />
 		</Fragment>
 	)

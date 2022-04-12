@@ -35,7 +35,7 @@ const Checkout = () => {
                 <p className='text-lg font-bold'>Your Balance</p>
 
                 <div className='flex flex-row items-center py-3'>
-                    <img className='w-[16px] h-[16px] mr-1' src={require('assets/icons/near-logo.png')} />
+                    <img className='w-[16px] h-[16px] mr-1' src={require('../assets/icons/near-logo.png')} />
                     <span>5000</span>
                 </div>
             </div>

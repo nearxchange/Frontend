@@ -27,10 +27,10 @@ const MainNavigation = (props) => {
 								<NavLink className="block py-2 pl-3 pr-4 text-lg text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page" to='/walletMarketPlace'>Wallet Market Place</NavLink>
 							</li>
 							<li>
-								<NavLink className="block py-2 pl-3 pr-4 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to='/new-quote'>Listing Your Wallet</NavLink>
+								<NavLink className="block py-2 pl-3 pr-4 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to='/walletListing'>Listing Your Wallet</NavLink>
 							</li>
 							<li>
-								<a href="#" className="block py-2 pl-3 pr-4 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Profile</a>
+								<NavLink className="block py-2 pl-3 pr-4 text-lg text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" to='/profile'>Profile</NavLink>
 							</li>
 							<li>
 								{/* Update later for Cart */}
