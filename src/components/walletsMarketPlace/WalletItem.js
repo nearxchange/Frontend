@@ -11,7 +11,7 @@ const WalletItem = (props) => {
         <blockquote className='text-2xl'>
           <p>{props.text}</p>
         </blockquote>
-        <figcaption className='text-sm'>by: {props.author}</figcaption>
+        <figcaption className='text-sm italic'>by: {props.author}</figcaption>
       </figure>
       <figcaption className='flex mx-auto my-auto text-lg'>
         {props.price}

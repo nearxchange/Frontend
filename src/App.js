@@ -8,6 +8,7 @@ import WalletListing from './pages/WalletListing'
 import NotFound from './pages/NotFound'
 import getConfig from './config'
 import './css/styles.css'
+import Checkout from './pages/Checkout';
 
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
 
@@ -56,6 +57,9 @@ export default function App() {
             </Route>
             <Route path='/new-quote'>
               <WalletListing />
+            </Route>
+            <Route path='/checkout'>
+              <Checkout />
             </Route>
             <Route path='*'>
               <NotFound />

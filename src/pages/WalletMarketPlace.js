@@ -2,6 +2,8 @@ import React from 'react'
 
 import WalletList from '../components/walletsMarketPlace/WalletList';
 import SearchBox from '../components/comments/SearchBox';
+import MatchingWallet from '../components/walletsMarketPlace/MatchingWallet';
+import { Fragment } from 'react';
 
 const DUMMY_QUOTES = [
 	{ id: 'q1', author: 'bob_seller.testnet', price: '10', text: 'alice.testnet' },
@@ -14,10 +16,12 @@ const DUMMY_QUOTES = [
 
 const WalletMarketPlace = () => {
 	return (
-		<div>
+		<Fragment>
 			<SearchBox />
+			<MatchingWallet />
+			<hr className='w-10/12 mx-auto my-12 border-gray-400' />
 			<WalletList quotes={DUMMY_QUOTES} />
-		</div>
+		</Fragment>
 	)
 
 };
