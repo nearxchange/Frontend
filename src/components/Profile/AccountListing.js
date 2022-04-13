@@ -47,7 +47,7 @@ const AccountListing = (props) => {
 							N-100
 						</td>
 						<td className="px-6 py-4 text-right">
-							<a href="#" className="text-lg font-medium text-blue-600 dark:text-blue-500 hover:underline">Un-Listing</a>
+							<a href="#" className="text-lg font-medium text-red-600 dark:text-blue-500 hover:underline">Un-List</a>
 						</td>
 					</tr>
 					<tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -64,7 +64,7 @@ const AccountListing = (props) => {
 							N-50
 						</td>
 						<td className="px-6 py-4 text-right">
-							<a href="#" className="text-lg font-medium text-blue-600 dark:text-blue-500 hover:underline">Un-Listing</a>
+							<a href="#" className="text-lg font-medium text-red-600 dark:text-blue-500 hover:underline">Un-List</a>
 						</td>
 					</tr>
 					<tr className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -81,7 +81,7 @@ const AccountListing = (props) => {
 							N-99
 						</td>
 						<td className="px-6 py-4 text-right">
-							<a href="#" className="text-lg font-medium text-blue-600 dark:text-blue-500 hover:underline">Un-Listing</a>
+							<a href="#" className="text-lg font-medium text-red-600 dark:text-blue-500 hover:underline">Un-List</a>
 						</td>
 					</tr>
 				</tbody>

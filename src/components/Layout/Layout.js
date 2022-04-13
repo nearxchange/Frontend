@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import MainNavigation from './MainNavigation';
 import Cart from '../Cart/Cart';
+import Footer from './Footer';
 
 const Layout = (props) => {
 	const [cartIsShown, setCartIsShown] = useState(false);
@@ -22,6 +23,7 @@ const Layout = (props) => {
 					{props.children}
 				</div>
 			</main>
+			<Footer />
 		</div>
 	)
 }
