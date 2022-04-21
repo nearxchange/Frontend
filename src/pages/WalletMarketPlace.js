@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import WalletList from '../components/walletsMarketPlace/WalletList';
 import SearchBox from '../components/comments/SearchBox';
 import MatchingWallet from '../components/walletsMarketPlace/MatchingWallet';
-import { Fragment } from 'react';
 
 const DUMMY_QUOTES = [
 	{ id: 'q1', author: 'bob_seller.testnet', price: '10', text: 'alice.testnet' },
