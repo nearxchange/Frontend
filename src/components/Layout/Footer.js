@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = (props) => {
 	return (
-		<footer className="text-center text-gray-600 bg-gray-50 mt-28 lg:text-left">
+		<footer className="text-center text-gray-600 bg-gray-100 mt-28 lg:text-left">
 			<div className="flex items-center justify-center p-6 border-b border-gray-300 lg:justify-between">
 				<div className="hidden mr-12 lg:block">
 					<span>Get connected with us on social networks:</span>

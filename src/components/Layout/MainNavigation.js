@@ -7,7 +7,7 @@ import HeaderCartButton from './HeaderCartButton'
 const MainNavigation = (props) => {
 	return (
 		<header>
-			<nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 mt-3 rounded dark:bg-gray-800">
+			<nav className="bg-white border-gray-200 px-3 sm:px-4 py-2.5 dark:bg-gray-800">
 				<div className="container flex flex-wrap items-center justify-between mx-auto">
 					<a href="https://flowbite.com" className="flex items-center">
 						<img src="https://s2.coinmarketcap.com/static/img/coins/200x200/6535.png" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
