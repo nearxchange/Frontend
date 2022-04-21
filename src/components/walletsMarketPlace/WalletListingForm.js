@@ -31,8 +31,8 @@ const WalletListingForm = (props) => {
   }
 
   return (
-    <div>
-      <form class="mt-8 space-y-6" action="#" method="POST">
+    <div class="flex justify-center">
+      <form class="w-[80%] sm:w-[500px] mt-8 space-y-6" action="#" method="POST">
         <input type="hidden" name="remember" value="true" />
         <div class="rounded-md shadow-sm -space-y-px">
           <div>

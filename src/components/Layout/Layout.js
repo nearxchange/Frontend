@@ -19,9 +19,7 @@ const Layout = (props) => {
 			<Cart isOpen={cartIsShown} onClose={hideCartHandler} />
 			<MainNavigation onShowCart={showCartHandler} />
 			<main>
-				<div className='mx-[10%]'>
-					{props.children}
-				</div>
+				{props.children}
 			</main>
 			<Footer />
 		</div>
