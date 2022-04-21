@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import AddToCartIcon from '../Cart/CartItem/Icon/AddToCartIcon';
 import AddToFavoriteIcon from '../Cart/CartItem/Icon/AddToFavoriteIcon';
+import AddToCartButton from './AddToCartButton';
+import CartContext from '../../store/cart-context';
 
 const WalletItem = (props) => {
+  const cartCtx = useContext(CartContext)
+  // const price = `$${props.price.toFixed(2)}`
+
+  const addToCartHandler = () => {
+    cartCtx.addItem({
+      id: props.id,
+      author: props.author,
+      price: props.price,
+      text: props.text
+    });
+  };
+
   return (
     <li className='grid grid-cols-4 gap-y-4'>
       <button className='pl-16 mx-auto'><AddToFavoriteIcon /></button>
@@ -16,7 +29,7 @@ const WalletItem = (props) => {
       <figcaption className='flex mx-auto my-auto text-lg'>
         {props.price}
       </figcaption>
-      <button className='my-auto mr-4'><AddToCartIcon /></button>
+      <AddToCartButton onAddToCart={addToCartHandler} />
     </li >
   );
 };

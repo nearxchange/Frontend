@@ -5,11 +5,11 @@ import SearchBox from '../components/comments/SearchBox';
 import MatchingWallet from '../components/walletsMarketPlace/MatchingWallet';
 
 const DUMMY_QUOTES = [
-	{ id: 'q1', author: 'bob_seller.testnet', price: '10', text: 'alice.testnet' },
-	{ id: 'q2', author: 'peter_seller1.testnet', price: '10', text: 'wallet.testnet' },
-	{ id: 'q3', author: 'peter_seller1.testnet', price: '10', text: 'wallet.testnet' },
-	{ id: 'q4', author: 'peter_seller1.testnet', price: '10', text: 'wallet.testnet' },
-	{ id: 'q5', author: 'peter_seller1.testnet', price: '10', text: 'wallet.testnet' },
+	{ id: 'q1', author: 'bob_seller.testnet', price: 10, text: 'alice.testnet' },
+	{ id: 'q2', author: 'peter_seller1.testnet', price: 10, text: 'wallet.testnet' },
+	{ id: 'q3', author: 'peter_seller1.testnet', price: 10, text: 'wallet.testnet' },
+	{ id: 'q4', author: 'peter_seller1.testnet', price: 10, text: 'wallet.testnet' },
+	{ id: 'q5', author: 'peter_seller1.testnet', price: 10, text: 'wallet.testnet' },
 ];
 
 
