@@ -16,7 +16,7 @@ const Layout = (props) => {
 
 	return (
 		<div>
-			{cartIsShown && <Cart onClose={hideCartHandler} />}
+			<Cart isOpen={cartIsShown} onClose={hideCartHandler} />
 			<MainNavigation onShowCart={showCartHandler} />
 			<main>
 				<div className='mx-[10%]'>

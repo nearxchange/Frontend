@@ -3,7 +3,7 @@ import Modal from '../UI/Modal';
 import CartContext from '../../store/cart-context';
 import CartOverlay from './CartOverlay';
 import CartItem from './CartItem/CartItem';
-const Cart = (props) => {
+const Cart = ({isOpen, onClose}) => {
 	const cartCtx = useContext(CartContext);
 
 	const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`
@@ -26,15 +26,15 @@ const Cart = (props) => {
 		onAdd={cartItemAddHandler.bind(null, item)} />)}</ul>
 
 	return (
-		<Modal onClose={props.onClose}>
+		<Modal onClose={onClose}>
 			{cartItems}
 			<div>
-				<CartOverlay onClicks={props.onClose} />
+				<CartOverlay isOpen={isOpen} onClicks={onClose} />
 				<span>Total Amount</span>
 				<span>{totalAmount}</span>
 			</div>
 			<div>
-				<button onClick={props.onClose}>Close</button>
+				<button onClick={onClose}>Close</button>
 				{hasItems && <button>Order</button>}
 			</div>
 		</Modal>

@@ -1,5 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 
@@ -28,8 +28,12 @@ const products = [
 	// More products...
 ]
 
-const CartOverlay = (props) => {
-	const [open, setOpen] = useState(true)
+const CartOverlay = ({isOpen, onClicks}) => {
+	const [open, setOpen] = useState(false);
+
+	useEffect(() => {
+		setOpen(isOpen);
+	}, [isOpen]);
 
 	return (
 		<Transition.Root show={open} as={Fragment}>
@@ -66,8 +70,8 @@ const CartOverlay = (props) => {
 												<button
 													type="button"
 													className="p-2 -m-2 text-gray-400 hover:text-gray-500"
-													onClick={() => {
-														props.onClicks;
+													onClick={(e) => {
+														onClicks(e);
 														setOpen(false);
 													}}
 												>
@@ -139,7 +143,7 @@ const CartOverlay = (props) => {
 													className="font-medium text-indigo-600 hover:text-indigo-500"
 													onClick={(e) => {
 														setOpen(false);
-														props.onClicks(e);
+														onClicks(e);
 													}}
 												>
 													Continue Shopping<span aria-hidden="true"> &rarr;</span>
@@ -152,7 +156,7 @@ const CartOverlay = (props) => {
 												<button
 													type="button"
 													className="font-medium text-indigo-600 hover:text-indigo-500"
-													onClick={props.onClicks}
+													onClick={onClicks}
 												>
 													Continue Shopping2<span aria-hidden="true"> &rarr;</span>
 												</button>
