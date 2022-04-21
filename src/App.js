@@ -7,7 +7,7 @@ import WalletMarketPlace from './pages/WalletMarketPlace'
 import WalletListing from './pages/WalletListing'
 import NotFound from './pages/NotFound'
 import getConfig from './config'
-import './css/styles.css'
+
 import Checkout from './pages/Checkout';
 import Profile from './pages/Profile'
 
