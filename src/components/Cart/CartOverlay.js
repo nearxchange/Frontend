@@ -1,46 +1,14 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useState } from 'react'
+import React, { Fragment, useState, useContext } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
+import CartContext from '../../store/cart-context'
+import CartItemOverlay from './CartItemOverlay'
+
 
 const products = [
 	{
 		id: 1,
-		author: 'wallet.testnet',
-		price: '$90.00',
-		text: 'seller_wallet.testnet',
-		href: '#',
-	},
-	{
-		id: 2,
-		author: 'wallet.testnet',
-		price: '$90.00',
-		text: 'seller_wallet.testnet',
-		href: '#',
-	},
-	{
-		id: 3,
-		author: 'wallet.testnet',
-		price: '$90.00',
-		text: 'seller_wallet.testnet',
-		href: '#',
-	},
-	{
-		id: 4,
-		author: 'wallet.testnet',
-		price: '$90.00',
-		text: 'seller_wallet.testnet',
-		href: '#',
-	},
-	{
-		id: 5,
-		author: 'wallet.testnet',
-		price: '$90.00',
-		text: 'seller_wallet.testnet',
-		href: '#',
-	},
-	{
-		id: 6,
 		author: 'wallet.testnet',
 		price: '$90.00',
 		text: 'seller_wallet.testnet',
@@ -51,10 +19,33 @@ const products = [
 
 const CartOverlay = (props) => {
 	const [open, setOpen] = useState(true)
+	const cartCtx = useContext(CartContext);
+	const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`
+
+	const cartItemRemoveHandler = (id) => {
+		cartCtx.removeItem(id);
+	};
+
+	const cartItemAddHandler = (item) => {
+		cartCtx.addItem({ ...item, amount: 1 })
+	};
+
+	const cartItems = <ul>{cartCtx.items.map((item) => <CartItemOverlay
+		key={item.id}
+		author={item.author}
+		amount={item.amount}
+		price={item.price}
+		text={item.text}
+		onRemove={cartItemRemoveHandler.bind(null, item.id)}
+		onAdd={cartItemAddHandler.bind(null, item)} />)}</ul>
 
 	return (
 		<Transition.Root show={open} as={Fragment}>
-			<Dialog as="div" className="fixed inset-0 overflow-hidden" onClose={setOpen}>
+			<Dialog as="div" className="fixed inset-0 overflow-hidden"
+				onClose={(e) => {
+					props.onClicks(e);
+					setOpen(false);
+				}}>
 				<div className="absolute inset-0 overflow-hidden">
 					<Transition.Child
 						as={Fragment}
@@ -87,8 +78,8 @@ const CartOverlay = (props) => {
 												<button
 													type="button"
 													className="p-2 -m-2 text-gray-400 hover:text-gray-500"
-													onClick={() => {
-														props.onClicks;
+													onClick={(e) => {
+														props.onClicks(e);
 														setOpen(false);
 													}}
 												>
@@ -101,28 +92,7 @@ const CartOverlay = (props) => {
 										<div className="mt-8">
 											<div className="flow-root">
 												<ul role="list" className="-my-6 divide-y divide-gray-200">
-													{products.map((product) => (
-														<li key={product.id} className="flex py-6">
-															<div className="flex flex-col flex-1 ml-4">
-																<div>
-																	<div className="flex justify-between text-base font-medium text-gray-900">
-																		<h3>
-																			<a href={product.href}> {product.author} </a>
-																		</h3>
-																		<p className="ml-4">{product.price}</p>
-																	</div>
-																	<p className="mt-1 text-sm text-gray-500">by: {product.text}</p>
-																</div>
-																<div className="flex items-end justify-between flex-1 text-sm">
-																	<div className="flex">
-																		<button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
-																			Remove
-																		</button>
-																	</div>
-																</div>
-															</div>
-														</li>
-													))}
+													{cartItems}
 												</ul>
 											</div>
 										</div>
@@ -131,7 +101,7 @@ const CartOverlay = (props) => {
 									<div className="px-4 py-6 border-t border-gray-200 sm:px-6">
 										<div className="flex justify-between text-base font-medium text-gray-900">
 											<p>Subtotal</p>
-											<p>$262.00</p>
+											<p>{totalAmount}</p>
 										</div>
 										<p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
 										<div className="mt-6">
@@ -154,18 +124,6 @@ const CartOverlay = (props) => {
 													}}
 												>
 													Continue Shopping<span aria-hidden="true"> &rarr;</span>
-												</button>
-											</p>
-										</div>
-										<div className="flex justify-center mt-6 text-sm text-center text-gray-500">
-											<p>
-												or{' '}
-												<button
-													type="button"
-													className="font-medium text-indigo-600 hover:text-indigo-500"
-													onClick={props.onClicks}
-												>
-													Continue Shopping2<span aria-hidden="true"> &rarr;</span>
 												</button>
 											</p>
 										</div>

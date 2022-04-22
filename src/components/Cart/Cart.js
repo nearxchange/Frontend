@@ -27,16 +27,16 @@ const Cart = (props) => {
 
 	return (
 		<Modal onClose={props.onClose}>
-			{cartItems}
-			<div>
-				<CartOverlay onClicks={props.onClose} />
-				<span>Total Amount</span>
+			{/* {cartItems}
+			<div> */}
+			<CartOverlay onClicks={props.onClose} />
+			{/* <span>Total Amount</span>
 				<span>{totalAmount}</span>
 			</div>
 			<div>
 				<button onClick={props.onClose}>Close</button>
 				{hasItems && <button>Order</button>}
-			</div>
+			</div> */}
 		</Modal>
 	);
 };
