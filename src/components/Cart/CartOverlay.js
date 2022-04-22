@@ -6,25 +6,46 @@ import { XIcon } from '@heroicons/react/outline'
 const products = [
 	{
 		id: 1,
-		name: 'Throwback Hip Bag',
-		href: '#',
-		color: 'Salmon',
+		author: 'wallet.testnet',
 		price: '$90.00',
-		quantity: 1,
-		imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg',
-		imageAlt: 'Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt.',
+		text: 'seller_wallet.testnet',
+		href: '#',
 	},
 	{
 		id: 2,
-		name: 'Medium Stuff Satchel',
+		author: 'wallet.testnet',
+		price: '$90.00',
+		text: 'seller_wallet.testnet',
 		href: '#',
-		color: 'Blue',
-		price: '$32.00',
-		quantity: 1,
-		imageSrc: 'https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg',
-		imageAlt:
-			'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
 	},
+	{
+		id: 3,
+		author: 'wallet.testnet',
+		price: '$90.00',
+		text: 'seller_wallet.testnet',
+		href: '#',
+	},
+	{
+		id: 4,
+		author: 'wallet.testnet',
+		price: '$90.00',
+		text: 'seller_wallet.testnet',
+		href: '#',
+	},
+	{
+		id: 5,
+		author: 'wallet.testnet',
+		price: '$90.00',
+		text: 'seller_wallet.testnet',
+		href: '#',
+	},
+	{
+		id: 6,
+		author: 'wallet.testnet',
+		price: '$90.00',
+		text: 'seller_wallet.testnet',
+		href: '#',
+	}
 	// More products...
 ]
 
@@ -82,27 +103,17 @@ const CartOverlay = (props) => {
 												<ul role="list" className="-my-6 divide-y divide-gray-200">
 													{products.map((product) => (
 														<li key={product.id} className="flex py-6">
-															<div className="flex-shrink-0 w-24 h-24 overflow-hidden border border-gray-200 rounded-md">
-																<img
-																	src={product.imageSrc}
-																	alt={product.imageAlt}
-																	className="object-cover object-center w-full h-full"
-																/>
-															</div>
-
 															<div className="flex flex-col flex-1 ml-4">
 																<div>
 																	<div className="flex justify-between text-base font-medium text-gray-900">
 																		<h3>
-																			<a href={product.href}> {product.name} </a>
+																			<a href={product.href}> {product.author} </a>
 																		</h3>
 																		<p className="ml-4">{product.price}</p>
 																	</div>
-																	<p className="mt-1 text-sm text-gray-500">{product.color}</p>
+																	<p className="mt-1 text-sm text-gray-500">by: {product.text}</p>
 																</div>
 																<div className="flex items-end justify-between flex-1 text-sm">
-																	<p className="text-gray-500">Qty {product.quantity}</p>
-
 																	<div className="flex">
 																		<button type="button" className="font-medium text-indigo-600 hover:text-indigo-500">
 																			Remove
