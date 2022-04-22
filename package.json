@@ -42,6 +42,7 @@
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.4",
+    "lodash": "^4.17.21",
     "near-api-js": "~0.43.1",
     "postcss": "^8.4.12",
     "postcss-cli": "^8.3.1",
