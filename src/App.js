@@ -8,6 +8,9 @@ import WalletListing from './pages/WalletListing'
 import NotFound from './pages/NotFound'
 import getConfig from './config'
 
+import Checkout from './pages/Checkout';
+import Profile from './pages/Profile'
+
 const { networkId } = getConfig(process.env.NODE_ENV || 'development')
 
 export default function App() {
@@ -53,8 +56,14 @@ export default function App() {
             <Route path='/walletMarketPlace' exact>
               <WalletMarketPlace />
             </Route>
-            <Route path='/new-quote'>
+            <Route path='/walletListing'>
               <WalletListing />
+            </Route>
+            <Route path='/checkout'>
+              <Checkout />
+            </Route>
+            <Route path='/profile'>
+              <Profile />
             </Route>
             <Route path='*'>
               <NotFound />
