@@ -1,8 +1,7 @@
-import classes from './NoQuotesFound.module.css';
 
 const NoQuotesFound = () => {
   return (
-    <div className={classes.noquotes}>
+    <div>
       <p>No quotes found!</p>
       <a className='btn'>
         Add a Quote

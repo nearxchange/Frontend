@@ -2,14 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
-import './global.css';
 import { initContract } from './utils'
+import 'tw-elements';
+import CartProvider from './store/CartProvider';
 
 window.nearInitPromise = initContract()
   .then(() => {
     ReactDOM.render(
       <BrowserRouter>
-        <App />
+        <CartProvider>
+          <App />
+        </CartProvider>
       </BrowserRouter>,
       document.querySelector('#root')
     )
